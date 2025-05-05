@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taiel Ramírez - Compositor</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .foto-perfil {
+      width: 180px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .habilidades {
+      background: #2a2a2a;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+    .habilidades ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .habilidades li::before {
+      content: "🎧 ";
+    }
+    .redes {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Taiel Ramírez</h1>
+    <p>Compositor de música para videojuegos</p>
+  </header>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <img src="fbfbbc.jpg" alt="Foto de Taiel Ramírez tocando la guitarra" class="foto-perfil">
+    <p>Soy Taiel, compositor/productor musical y guitarrista de Argentina. Soy un apasionado de los videojuegos, pero sobre todo, de su aspecto sonoro (musical y no musical). Me encanta crear mundos sonoros inmersivos que cuentan historias y transmiten sentimientos.</p>
+  </section>
+
+  <section class="habilidades">
+    <h2>Herramientas que utilizo</h2>
+    <ul>
+      <li>Ableton Live (composición y producción)</li>
+      <li>MuseScore (partituras y bocetos)</li>
+    </ul>
+  </section>
+
+  <section id="proyectos">
+    <h2>Mis Composiciones</h2>
+
+    <div class="proyecto">
+      <h3>Eco Heroes: Save the Planet</h3>
+      <p>Composicion para los niveles de Eco Heroes.</p>
+      <div class="video-container">
+        <iframe loading="lazy" src="https://www.youtube.com/embed/J_zspsEN8_o" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="proyecto">
+      <h3>The Purifier</h3>
+      <p>Otro tema musical original, en este caso para The Purifier.</p>
+      <div class="video-container">
+        <iframe loading="lazy" src="https://www.youtube.com/embed/cOuwcj7gSFw" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="proyecto">
+      <h3>DeathBound</h3>
+      <p>Composición para dialogos.</p>
+      <div class="video-container">
+        <iframe loading="lazy" src="https://www.youtube.com/embed/bfhHFMfLtdo" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="proyecto">
+      <h3>Bullet Heck</h3>
+      <p>Música chip-tune para menu.</p>
+      <div class="video-container">
+        <iframe loading="lazy" src="https://www.youtube.com/embed/WJsL4E-dwug" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Querés trabajar conmigo? Escribime a <a href="mailto:taielrzmusic@gmail.com">taielrzmusic@gmail.com</a></p>
+    <div class="redes">
+      <p>También podés encontrarme en <a href="https://www.instagram.com/taielrz_/" target="_blank">Instagram</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Taiel Ramírez - <span id="year">2025</span></p>
+  </footer>
+  <script>
+    // Actualiza automáticamente el año en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
